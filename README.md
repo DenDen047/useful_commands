@@ -7,4 +7,4 @@ copy all files in the directory as merge files.
 ## TODO
 - [ ] extract all zip files under the directory
 - [ ] remove copied files
-- [ ] pipeline for downloaded manga
+- [ ] pipeline from extraction to transformation for downloaded files
