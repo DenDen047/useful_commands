@@ -1,4 +1,4 @@
-FROM jupyter/tensorflow-notebook:latest
+FROM python:3.8
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
