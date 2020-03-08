@@ -9,6 +9,7 @@ copy all files in the directory as merge files.
 restart Mission Control on Mac when it doesn't work.
 
 ## TODO
-- [ ] extract all zip files under the directory
-- [ ] remove copied files
+- [ ] set up the docker environment
+- [ ] extract and remove a zip file
+- [ ] implement the above program for all zip files under a particular directory
 - [ ] pipeline from extraction to transformation for downloaded files
