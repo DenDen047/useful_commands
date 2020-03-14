@@ -3,6 +3,7 @@
 IMAGE_NAME="denden047/useful_commands:latest"
 MAIN_DIR=${PWD}/unzip_manga
 COMMAND="python main.py"
+echo ${COMMAND}
 
 cd docker && \
 docker image build \
@@ -12,6 +13,7 @@ docker image build \
 docker container run \
     --rm \
     -v ${MAIN_DIR}:/workdir \
-    -w=/workdir \
+    -v $1:/target_dir \
+    -w /workdir \
     ${IMAGE_NAME} \
     ${COMMAND}
