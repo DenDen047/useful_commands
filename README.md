@@ -8,6 +8,10 @@ copy all files in the directory as merge files.
 
 restart Mission Control on Mac when it doesn't work.
 
+## unzip_files.sh
+
+decompress all zip files under the root directory user specifies.
+
 ## TODO
 - [ ] transfer decompressed files to NAS
 - [ ] pipeline from extraction to transformation for downloaded files
