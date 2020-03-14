@@ -1,6 +1,8 @@
 import os
 import argparse
 import glob
+import zipfile
+from tqdm import tqdm
 
 
 parser = argparse.ArgumentParser(description='TODO')
@@ -32,9 +34,17 @@ def main():
         root_dir=args.target_dir,
         target_extensions=['zip']
     )
-    print(zip_file_paths)
 
     # decompress those files in the loop
+    for zip_file_path in tqdm(zip_file_paths):
+        # decompress the file
+        with zipfile.ZipFile(zip_file_path) as zf:
+            zf.extractall(
+                path=zip_file_path[:-4]
+            )
+
+        # remove the zip file
+        os.remove(zip_file_path)
 
 
 if __name__ == '__main__':
