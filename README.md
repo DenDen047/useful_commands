@@ -8,7 +8,13 @@ copy all files in the directory as merge files.
 
 restart Mission Control on Mac when it doesn't work.
 
+## unzip_files.sh
+
+decompress all zip files under the root directory user specifies.
+
 ## TODO
-- [ ] extract all zip files under the directory
-- [ ] remove copied files
+- [ ] transfer decompressed files to NAS
 - [ ] pipeline from extraction to transformation for downloaded files
+- [x] implement the above program for all zip files under a particular directory
+- [x] extract and remove a zip file
+- [x] set up the docker environment
