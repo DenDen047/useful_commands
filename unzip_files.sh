@@ -5,7 +5,8 @@ MAIN_DIR=${PWD}/unzip_manga
 COMMAND="python main.py"
 echo ${COMMAND}
 
-cd docker && \
+cd docker
+
 docker image build \
     --rm \
     -t ${IMAGE_NAME} .
